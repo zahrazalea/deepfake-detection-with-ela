@@ -1,0 +1,10 @@
+os  
+Pillow
+numpy
+tensorflow
+matplotlib
+seaborn
+scikit-learn
+pandas
+keras
+streamlit
