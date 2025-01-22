@@ -13,10 +13,7 @@ left_col, center_col, right_col = st.columns([1, 5, 1])
 
 with center_col:
     st.title("Error-Level Analysis (ELA): Deepfake Detection")
-    st.write("A Data Science project by:")
-    st.markdown("""
-                Zahra Azalea
-                """)
+    st.write("A Data Science project by Zahra Azalea")
     
     tab1, tab2, tab3 , tab4,tab5= st.tabs(["About", "User Guide", "Demonstration", "Issues", "Code"])
 
