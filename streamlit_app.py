@@ -27,11 +27,11 @@ with center_col:
         with intro_col1:
             st.markdown("### What's a Deepfake?")
             st.write("*A type of media involving a person, in which their face or body has been digitally altered, usually for malicious intent. (Oxford Media Press, 2023)*")
-            st.image("streamlit pics/deepfake.png", caption="Original & Deepfake Image",use_container_width=True)
+            st.image("streamlit pics/deepfake.PNG", caption="Original & Deepfake Image",use_container_width=True)
         with intro_col2:
             st.markdown("### What's an error-level analysis (ELA)?")
             st.write("*An image forensics technique that shows the amount of difference between an image and its resave at a certain error level. White means more change, and black indicates no change.*")
-            st.image("streamlit pics/ela.png", caption="ELA and Non-ELA Image",use_container_width=True)
+            st.image("streamlit pics/ela.PNG", caption="ELA and Non-ELA Image",use_container_width=True)
         
         st.markdown("---")
         st.markdown("### The Basis of this Project")
@@ -56,22 +56,22 @@ with center_col:
 
         st.info("1. Select the 'Demonstration Tab'.")
         st.info("2. Click the 'Browse files' button to upload an image from local files.")
-        st.image("streamlit pics/ug1.png",use_container_width=True)
+        st.image("streamlit pics/ug1.PNG",use_container_width=True)
         st.markdown("---")
         st.info("3. The uploaded image will be displayed with its original size and resolution.")
-        st.image("streamlit pics/ug2.png",use_container_width=True)
+        st.image("streamlit pics/ug2.PNG",use_container_width=True)
         st.markdown("---")
         st.info("4. Select 'Yes' or 'No' for ELA implementation.")
-        st.image("streamlit pics/ug3.png",use_container_width=True)
+        st.image("streamlit pics/ug3.PNG",use_container_width=True)
         st.markdown("---")
         st.info("5. Select the preferred model, a recommended model will be shown below it.")
-        st.image("streamlit pics/ug4.png",use_container_width=True)
+        st.image("streamlit pics/ug4.PNG",use_container_width=True)
         st.markdown("---")
         st.info("6. Click 'Run Model' to begin analysis.")
-        st.image("streamlit pics/ug5.png",use_container_width=True)
+        st.image("streamlit pics/ug5.PNG",use_container_width=True)
         st.markdown("---")
         st.info("7. A processed image will be displayed, as well as the classification result and its confidence level.")
-        st.image("streamlit pics/ug6.png",use_container_width=True)
+        st.image("streamlit pics/ug6.PNG",use_container_width=True)
         
         
     def preprocess(image_pil, bool):
@@ -220,12 +220,12 @@ with center_col:
         
         st.markdown('#### Here are examples of proper ELA:')
         con_ela1, con_ela2, con_ela3 ,con_ela4= st.columns(4)
-        with con_ela1: st.image("streamlit pics/ela_issue1.png",caption='Normal Image (Deepfake)', use_container_width=True)
-        with con_ela2: st.image("streamlit pics/ela_issue2.png",caption='ELA Image (Deepfake)', use_container_width=True)
+        with con_ela1: st.image("streamlit pics/ela_issue1.PNG",caption='Normal Image (Deepfake)', use_container_width=True)
+        with con_ela2: st.image("streamlit pics/ela_issue2.PNG",caption='ELA Image (Deepfake)', use_container_width=True)
 
         con_ela5, con_ela6, con_ela7 ,con_ela8= st.columns(4)
-        with con_ela5: st.image("streamlit pics/ela_issue3.png",caption='Normal Image (Real)', use_container_width=True)
-        with con_ela6: st.image("streamlit pics/ela_issue4.png",caption='ELA Image (Real)', use_container_width=True)
+        with con_ela5: st.image("streamlit pics/ela_issue3.PNG",caption='Normal Image (Real)', use_container_width=True)
+        with con_ela6: st.image("streamlit pics/ela_issue4.PNG",caption='ELA Image (Real)', use_container_width=True)
 
         st.markdown('#### Here are ELA images from the dataset used:')
         con_ela9, con_ela10, con_ela11 ,con_ela12= st.columns(4)
@@ -245,7 +245,7 @@ with center_col:
                     ''')
         st.markdown('#### Then why is there a difference between performance for images with ELA and images without ELA?')
         con_ela17, con_ela18, con_ela19 = st.columns(3)
-        with con_ela18: st.image("streamlit pics/modelresult.png",caption='Model Results', use_container_width=True)
+        with con_ela18: st.image("streamlit pics/modelresult.PNG",caption='Model Results', use_container_width=True)
         st.markdown('''
                     - Reduced fine details decreases effectiveness of ELA.
                     - Images resaved multiple times also decreases effectiveness of ELA.
